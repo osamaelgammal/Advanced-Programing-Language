@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class='box'>
+    <header><h2>Login</h2></header>
+    <form method="post" action="index1.php">
+        <div class="inp"><label>Username</label>
+        <input type="text" name="un"></div>
+        <div class="inp"><label >Password</label>
+        <input type="password" name="psw1"></div>
+        <div class="inp">
+            <button type="submit" name="login" class="btn">Sign In </button>
+        </div>
+        <p class='pp'>Not yet a member? <a href="register.php">Sign In</a></p>
+    </form>
+    </div>
+    </body>
+    </html>

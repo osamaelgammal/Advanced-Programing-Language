@@ -1,0 +1,73 @@
+*{
+    
+    text-align: center;
+}
+h1{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 5px;
+    background-color: rgb(235, 69, 95);
+    padding: 15px;
+    color: rgb(0, 0, 0);
+  font-size: 35px;
+}
+.box{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 5px;
+    width: 700px;
+    right: -25%;
+    position: relative;
+    height: 500px;
+    margin-top: 125px;
+    background-color: rgb(252, 255, 231);
+  
+
+}
+.pp{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 5px;
+    background-color: rgb(186, 215, 233);
+    padding: 5px;
+    
+}
+
+h2{
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 5px;
+    background-color: rgb(235, 69, 95);
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 35px;   
+}
+form{
+    font-size: 30px;
+    text-align: start;
+    
+   
+}
+input {
+    margin: 2px;
+    width: 15%;
+    background-color: aliceblue;
+    border-radius: 5%;
+    height: 20px;    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;  
+    
+  }
+  .btn{
+    background-color: #2B3467;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  }

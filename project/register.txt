@@ -1,0 +1,62 @@
+<?php include('connection.php');?>
+<?php
+if (!isset($_SESSION)){
+	session_start();}
+if(isset($_POST['register'])){
+	$username=mysqli_real_escape_string($con,$_POST['un']);
+	$email=mysqli_real_escape_string($con,$_POST['em']);
+	$password1=mysqli_real_escape_string($con,$_POST['psw1']);
+	$password2=mysqli_real_escape_string($con,$_POST['psw2']);
+	
+if ($password1!=$password2){
+	echo "pass dosent match";
+	}
+	else{
+$sql="insert into users(username,email,password) values('$username','$email','$password1')";
+mysqli_query($con,$sql);
+	
+	$_SESSION['name']=$username;
+ 	 echo "welcome dear " . $_SESSION['name'];
+	
+	}
+}
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>google</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<div class='box'>
+    <header><h1>Join Our Community</h1></header>
+    <p><h3 class='pp'><strong>Kindly May You Fill Your Data</strong></h3></p>
+    <form method="post" action="register.php">
+        
+    <input type="hidden" name="register" value="yes">
+        <div class="inp">
+            <label>Username</label>
+            <input type="text" name="un" required>
+        </div>
+        <div class="inp">
+            <label>Email</label>
+            <input type="email" name="em" required>
+        </div>
+        <div class="inp">
+            <label>Password</label>
+            <input type="password" name="psw1" required>
+
+        </div>
+        <div class="inp">
+            <label >Confirm Password</label>
+            <input type="password" name="psw2" required>
+        </div>
+        <div class="inp">
+            <button type="submit" name="register" class="btn">Register</button>
+        </div>
+        <p class='pp'>already a member? <a href="login.php">Sign In </p>
+        
+        </form>
+		
+        </body>
+		</html>

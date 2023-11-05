@@ -1,0 +1,28 @@
+<?php include('connection.php');?>
+<?php include('logform.php');?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class='box'>
+    <header><h1>Home</h1></header>
+    <section>
+        <?php
+        if (isset($_SESSION['name'])) {
+            echo $_SESSION['name'];
+        }
+        echo"<br>";
+        if (isset($_SESSION['success'])) {
+            echo $_SESSION['success'];
+        }
+        ?>
+    </section>
+    <div>
+        <a href="index1.php?logout='1'">logout</a>
+    </div>
+    </div>
+    </body>
+</html>
